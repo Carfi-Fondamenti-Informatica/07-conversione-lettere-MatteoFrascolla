@@ -1,5 +1,5 @@
 #include "lib.h"
-bool convL (char & a) {
+bool convert (char & a) {
     if ((a>=65 && a <= 90) || (a>=97 && a<=122)) {
         if (a>=65 && a<=90) {
             a+=32;
