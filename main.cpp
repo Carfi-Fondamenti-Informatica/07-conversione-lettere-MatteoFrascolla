@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     char a;
     cin >>a;
-    if (convert(a)){
+    if (convL(a)){
         cout<<a<<endl;
     }else{
         cout<<"errore"<<endl;
