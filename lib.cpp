@@ -1,12 +1,16 @@
 
 #include "lib.h"
-bool convert (char & a){
-  if (a>65 && a<=90){
-    a +=32;
+bool checkinput (int x){
+  if((x>=65 && x<=90) || (x>=97 && x<=122))
     return true;
-  } else if (a>=97 && a<=122){
-    a -=32;
-    return true;
-  }
-  return false;
+  else
+    return false;
+}
+char conversion (char x){
+  char res;
+  if (x >='A' && x <= 'Z')
+    res = x + 32;
+  else if (x >= 'a' && <= 'z')
+    res = x - 32;
+  return res;
 }
